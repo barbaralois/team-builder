@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  max-width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 62.5%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  padding-bottom: 2%;
+}
+
+.container {
+  width: 80%;
+  font-size: 1.1rem;
+  border: 2px solid navy;
+  border-radius: 25px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  padding: 0.3rem;
+}
+
+input {
+  background-image: none;
+  border: black solid 1px;
+  padding-left: 0.3rem;
+}
