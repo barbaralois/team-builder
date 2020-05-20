@@ -16,12 +16,14 @@ export default function Form(props) {
           name="name"
           value={values.name}
           onChange={onInputChange}
+          pattern="[a-zA-Z]*"
+          title="Letters Only"
         />
       </label>
       <label>
         Email:&nbsp;
         <input
-          type="text"
+          type="email"
           placeholder="..."
           maxLength="50"
           name="email"
@@ -31,7 +33,12 @@ export default function Form(props) {
       </label>
       <label>
         Role:&nbsp;
-        <select name="role" value={values.role} onChange={onInputChange}>
+        <select
+          name="role"
+          value={values.role}
+          onChange={onInputChange}
+          required
+        >
           <option value="">Select A Role</option>
           <option value="Front-End">Front-End Developer</option>
           <option value="Back-End">Back-End Developer</option>

@@ -34,8 +34,14 @@ export default function App() {
     setFormValues(initialFormValues);
   };
 
-  const onEditMember = (item) => {
-    console.log(item);
+  const onEditMember = (id) => {
+    console.log(id);
+    for (let i = 0; i < teamList.length; i++) {
+      if (teamList[i].id === id) {
+        setMemberToEdit(teamList[i]);
+        // this is not completed, just a starting point
+      }
+    }
   };
 
   return (
